@@ -5,13 +5,165 @@
 }
 
 html, body {
-    font-size: 17px;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.title h2{
+    font-family: 'Volkhov', serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 1.5rem;
+}
+
+.title p {
+    color: #707070;
+    margin: 0;
+    font-size: 17px;
+}
+
+.title button {
+    padding: 12px 30px;
+    background-color: #fb811e;
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.title button:hover {
+    background-color: #009f4d;
 }
 
 /* HEADER */
 
+.navbar-brand {
+    position: relative;
+}
+
+.navbar-brand h1 {
+    font-family: 'Volkhov', serif;
+    font-size: 2rem;
+}
+
+.navbar-light .navbar-brand {
+    color: #fb811e;
+}
+
+.navbar-brand .fa {
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 60px;
+}
+
+header .form-control {
+    width: 35px !important;
+    height: 35px;
+    border-radius: 35px;
+    background-image: url(../img/5023-512.png);
+    background-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+header .form-control:focus {
+    width: 200px !important ;
+    background-position: left;
+    background-position-x: 10px;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.theme button {
+    font-size: 20px;
+}
+
+.dropdown .btn {
+    font-size: 29px;
+}
+
+.dropdown-toggle::after{
+    content: none;
+}
+
+.dropdown-menu.show {
+    border: none;
+    box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+    width: 232px;
+    
+}
+
+header .dropdown-menu {
+    right: 0;
+    left: auto;
+    text-align: center;
+}
+
 /* CAROUSEL */
+
+.farmCarousel {
+    position: relative;
+}
+
+.carousel__left {
+    left: 10em;
+    z-index: 100;
+}
+
+.carouselLeft__content {
+    position: relative;
+}
+
+.carouselLeft__content>h2 {
+    font-size: 120px;
+    font-family: 'Volkhov', serif;
+    font-weight: bold;
+    color: #f4f4f4;
+    margin-left: -0.5em;
+    margin-bottom: -0.5em;
+}
+
+
+.carousel-item>img {
+    height: 100vh;
+    object-fit: cover;
+    border-bottom-left-radius: 20px ;
+}
+
+.carousel__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom-left-radius: 20px ;
+}
+
+#farmCaption .carousel-caption {
+}
+
+#farmCaption .carousel-indicators {
+    bottom: 20px;
+    margin: 0;
+}
+
+#farmCaption .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+#farmCaption .carousel-indicators .active {
+    background-color: #fb811e;
+}
+.carousel-item {
+    height: 100vh;
+}
 
 /* GROW */
 
@@ -53,7 +205,6 @@ html, body {
 }
 
 /* .cd-top--is-visible {
-    
     visibility: visible;
     opacity: 1;
   } */
