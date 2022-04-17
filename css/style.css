@@ -24,8 +24,6 @@ html, body {
     margin-bottom: 1.5rem;
 }
 
-
-
 .title p {
     color: #707070;
     margin: 0;
@@ -42,6 +40,10 @@ html, body {
 
 .title button:hover {
     background-color: #009f4d;
+}
+
+.align-items-center {
+    align-items: center !important;
 }
 
 /* HEADER */
@@ -176,6 +178,7 @@ header .dropdown-menu {
 /* SERVICES */
 .farmServices {
     background: #009f4d;
+    margin-top: 100px;
 }
 
 .row {
@@ -183,6 +186,22 @@ header .dropdown-menu {
     flex-wrap: wrap;
 }
 
+.row h5 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.row h3 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    margin-right: 33px;
+}
+
+.title__right {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
 
 
 
