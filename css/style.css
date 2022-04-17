@@ -12,6 +12,10 @@ html, body {
     max-width: 1200px;
 }
 
+.text-white {
+    color: #fff;
+}
+
 .title h2{
     font-family: 'Volkhov', serif;
     font-size: 50px;
@@ -19,6 +23,8 @@ html, body {
     line-height: 60px;
     margin-bottom: 1.5rem;
 }
+
+
 
 .title p {
     color: #707070;
@@ -168,6 +174,20 @@ header .dropdown-menu {
 /* GROW */
 
 /* SERVICES */
+.farmServices {
+    background: #009f4d;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
 
 /* WHYUS */
 
