@@ -181,10 +181,6 @@ header .dropdown-menu {
     margin-top: 100px;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .row h5 {
     font-size: 22px;
@@ -354,6 +350,56 @@ header .dropdown-menu {
 
 
 /* FEATURES */
+.features {
+    padding: 100px;
+}
+
+.features__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features a {
+    text-decoration: none;
+}
+
+.features h4 {
+    font-size: 24px;
+    color: #060606;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+}
+
+.features p {
+    color: #707070;
+    font-size: 17px;
+}
+
+.fea__item {
+    margin-top: 30px;
+}
+
+.fea__card {
+    background-color: #fafafa;
+    padding: 32px 1px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in;
+}
+
+.fea__card:hover {
+    background-color: #fff;
+    border: 1px solid #eee;
+    transition: 0.3s ease-in;
+}
+
+.fea__card:hover h4 {
+    color: #009f4d;
+    transition: 0.3s ease-in;
+}
+
+
+
 
 /* GALLERY */
 
