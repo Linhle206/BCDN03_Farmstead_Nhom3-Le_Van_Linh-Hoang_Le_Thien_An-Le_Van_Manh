@@ -13,6 +13,7 @@ body {
     max-width: 1200px;
 }
 
+
 .title p:first-of-type {
     font-size: 22px;
     font-family: 'Volkhov', serif;
@@ -44,6 +45,10 @@ body {
 
 .title button:hover {
     background-color: #009f4d;
+}
+
+.align-items-center {
+    align-items: center !important;
 }
 
 /* HEADER */
@@ -239,10 +244,229 @@ header .dropdown-menu {
 }
 
 /* SERVICES */
+.farmServices {
+    background: #009f4d;
+    margin-top: 100px;
+}
+
+.Services__title{
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.15;
+    font-size: 12vw;
+    bottom: 1%;
+    right: 20%;
+}
+
+.row h5 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.row h3 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    margin-right: 33px;
+    
+}
+
+.title__right {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+
+.card {
+    border-radius: 0.25rem;
+}
+
+.card__header img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card__body {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card__body span {
+    color: #009f4d;
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #009f4d29;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.card__body a{
+    display: block;
+    color: #060606;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0;
+    text-decoration: none;
+}
+
+.card__body a:hover {
+    color: #009f4d;
+}
+
+.card__body p {
+    color: #707070;
+    font-size: 17px;
+    line-height: 27px;
+
+}
 
 /* WHYUS */
+.whyUs {
+    padding-top: 100px;
+}
+
+.whyUs__content {
+    display: flex;
+}
+
+.whyUs__left {
+    align-self: center;
+}
+
+.whyUs h5 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fb811e;
+}
+
+.whyUs h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.whyUs P {
+    color: #707070;
+    font-size: 17px;
+    margin: 16px 0;
+}
+
+.whyUs__bottom {
+    display: flex;
+    margin-top: 50px;
+}
+
+.bottom__left, .bottom__right {
+    display: flex;
+    padding: 0 10px;
+}
+
+.whyUs__left span {
+    color: #fb811e;
+    font-size: 30px;
+}
+
+.qualified, .excellent{
+    margin-left: 10px;
+}
+
+.whyUs h4 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.whyUs__right {
+    margin-left: 100px;
+    position: relative;
+}
+
+.whyUs__img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.whyUs__year {
+    position: absolute;
+    background-color: #fb811e;
+    bottom: 40px;
+    left: -85px;
+    padding: 30px;
+    min-width: 300px;
+    border-radius: 0 0 100px 0;
+    text-align: center;
+}
+
+.whyUs__year h6 {
+    font-size: 70px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+.whyUs__year p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
 
 /* FEATURES */
+.features {
+    padding: 100px;
+}
+
+.features__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features a {
+    text-decoration: none;
+}
+
+.features h4 {
+    font-size: 24px;
+    color: #060606;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+}
+
+.features p {
+    color: #707070;
+    font-size: 17px;
+}
+
+.fea__item {
+    margin-top: 30px;
+}
+
+.fea__card {
+    background-color: #fafafa;
+    padding: 32px 1px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in;
+}
+
+.fea__card:hover {
+    background-color: #fff;
+    border: 1px solid #eee;
+    transition: 0.3s ease-in;
+}
+
+.fea__card:hover h4 {
+    color: #009f4d;
+    transition: 0.3s ease-in;
+}
+
+
+
 
 /* GALLERY */
 
