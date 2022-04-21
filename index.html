@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body id="myBody">
     <!-- HEADER -->
     <header class="fixed-top">
         <div class="container">
@@ -47,14 +47,14 @@
                         <input class="form-control mr-sm-2 shadow-none border" type="search">
                     </form>
                     <div class="theme">
-                        <button class="border-0 bg-transparent">
+                        <button class="border-0 bg-transparent" id="switchButton" title="Click to switch theme">
                             <i class="bi bi-moon"></i>
-                            <!-- <i class="bi bi-brightness-high"></i> -->
+                            <i class="bi bi-brightness-high"></i>
                         </button>
                     </div>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle shadow-none border-0 bg-transparent text-white" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle shadow-none border-0 bg-transparent text-white"
+                            type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
                             <i class="fa fa-bars"></i>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -82,56 +82,114 @@
                         <h2>Farm</h2>
                         <div class="title">
                             <h2>Welcome to Farmstead <br> where Natural Food is born!</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium.</p>
                             <button class="btn btn-success rounded-pill border-0">LEARN MORE</button>
                         </div>
                     </div>
                 </div>
                 <div id="farmCaption" class="col-md-7 carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                      <li data-target="#farmCaption" data-slide-to="0" class="active"></li>
-                      <li data-target="#farmCaption" data-slide-to="1"></li>
-                      <li data-target="#farmCaption" data-slide-to="2"></li>
+                        <li data-target="#farmCaption" data-slide-to="0" class="active"></li>
+                        <li data-target="#farmCaption" data-slide-to="1"></li>
+                        <li data-target="#farmCaption" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner border_bot">
                         <div class="carousel__overlay"></div>
-                      <div class="carousel-item active">
-                        <img src="./img/b1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block d-flex flex-row">
-                            <div class="carousel-slide-number d-inline-block">
-                                <h4 class="d-inline-block"><span>01</span>/03</h4>
-                                <p class="d-inline-block">Agriculture</p>
+                        <div class="carousel-item active border_bot">
+                            <img src="./img/b1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption row">
+                                <div class="carousel-slide-number col align-self-end">
+                                    <h4><span>01</span>/03</h4>
+                                    <p>Agriculture</p>
+                                </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="carousel__overlay"></div>
-                        <img src="./img/b8.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="carousel-slide-number">
-                                <h4><span>02</span>/03</h4>
-                                <p>Farm Field</p>
+                        <div class="carousel-item">
+                            <div class="carousel__overlay"></div>
+                            <img src="./img/b8.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="carousel-slide-number">
+                                    <h4><span>02</span>/03</h4>
+                                    <p>Farm Field</p>
+                                </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="carousel__overlay"></div>
-                        <img src="./img/b4.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div class="carousel-slide-number">
-                                <h4><span>03</span>/03</h4>
-                                <p>Organic Farm</p>
+                        <div class="carousel-item">
+                            <div class="carousel__overlay"></div>
+                            <img src="./img/b4.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="carousel-slide-number">
+                                    <h4><span>03</span>/03</h4>
+                                    <p>Organic Farm</p>
+                                </div>
                             </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- GROW -->
-    <section class="grow"></section>
+    <section class="grow">
+        <div class="container">
+            <div class="grow__content row align-items-center">
+                <div class="title col">
+                    <P>Grow Naturally</P>
+                    <h2>Leaders in the field</h2>
+                    <p>Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque
+                        ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit.
+                        Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.</p>
+                    <button class="btn btn-success rounded-pill border-0">DISCOVER MORE</button>
+                </div>
+                <div class="grow__items-bg col shadow-none">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="col mb-4">
+                            <div class="card border-0">
+                                <img src="./img/img4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="">
+                                        <p class="card-text">Natural Products</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card border-0">
+                                <img src="./img/img2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="">
+                                        <p class="card-text">Wheat Cultivation</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card border-0">
+                                <img src="./img/img1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="">
+                                        <p class="card-text">Modern Truck</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card border-0">
+                                <img src="./img/img3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="">
+                                        <p class="card-text">Organic Products</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- SERVICES -->
     <section class="farmServices"></section>
@@ -170,6 +228,14 @@
     <!-- BACK TO TOP -->
     <script src="./js/backToTop/main.js"></script>
     <script src="./js/backToTop/util.js"></script>
+
+     <!-- DARK THEME -->
+     <script>
+        document.getElementById("switchButton").onclick = function () {
+
+            document.getElementById("myBody").classList.toggle("dark");
+        };
+    </script>
 
 </body>
 
