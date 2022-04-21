@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -12,11 +13,15 @@ html, body {
     max-width: 1200px;
 }
 
-.text-white {
-    color: #fff;
+
+.title p:first-of-type {
+    font-size: 22px;
+    font-family: 'Volkhov', serif;
+    color: #fb811e;
+    font-weight: 400;
 }
 
-.title h2{
+.title h2 {
     font-family: 'Volkhov', serif;
     font-size: 50px;
     font-weight: bold;
@@ -24,7 +29,7 @@ html, body {
     margin-bottom: 1.5rem;
 }
 
-.title p {
+.title p:last-of-type {
     color: #707070;
     margin: 0;
     font-size: 17px;
@@ -47,6 +52,10 @@ html, body {
 }
 
 /* HEADER */
+
+header {
+    padding: 8px 16px;
+}
 
 .navbar-brand {
     position: relative;
@@ -80,7 +89,7 @@ header .form-control {
 }
 
 header .form-control:focus {
-    width: 200px !important ;
+    width: 200px !important;
     background-position: left;
     background-position-x: 10px;
     padding-left: 30px;
@@ -89,13 +98,19 @@ header .form-control:focus {
 
 .theme button {
     font-size: 20px;
+    color: #fff;
+    padding: 0 12px;
+}
+
+.theme button:hover {
+    color: #fb811e;
 }
 
 .dropdown .btn {
     font-size: 29px;
 }
 
-.dropdown-toggle::after{
+.dropdown-toggle::after {
     content: none;
 }
 
@@ -103,7 +118,7 @@ header .form-control:focus {
     border: none;
     box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
     width: 232px;
-    
+
 }
 
 header .dropdown-menu {
@@ -123,6 +138,10 @@ header .dropdown-menu {
     z-index: 100;
 }
 
+.farmCarousel .title p{
+    font-size: 20px;
+}
+
 .carouselLeft__content {
     position: relative;
 }
@@ -136,22 +155,20 @@ header .dropdown-menu {
     margin-bottom: -0.5em;
 }
 
+.border_bot {
+    border-bottom-left-radius: 20px;
+}
 
 .carousel-item>img {
     height: 100vh;
     object-fit: cover;
-    border-bottom-left-radius: 20px ;
 }
 
 .carousel__overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-bottom-left-radius: 20px ;
-}
-
-#farmCaption .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #farmCaption .carousel-indicators {
@@ -169,11 +186,62 @@ header .dropdown-menu {
 #farmCaption .carousel-indicators .active {
     background-color: #fb811e;
 }
+
 .carousel-item {
     height: 100vh;
 }
 
 /* GROW */
+
+.grow {
+    padding: 3rem 0;
+}
+
+.grow__content {
+    padding: 48px 0;
+}
+
+.grow .title {
+    padding-right: 3rem;
+}
+
+.grow .title p:first-of-type {
+    margin: 0;
+}
+
+.grow .card {
+    padding: 40px 30px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 1rem 3rem #00000008;
+    background-color: #fff
+}
+
+.grow img {
+    max-width: 65px;
+    margin: auto;
+}
+
+.grow .card-body {
+    padding: 0;
+    margin-top: 25px;
+}
+
+.grow .card-body a {
+    font-size: 20px;
+    font-family: 'Volkhov', serif;
+    line-height: 28px;
+    font-weight: 600;
+    display: block;
+    color: #060606;
+    text-decoration: none;
+}
+
+.mb-4,
+.my-4 {
+    margin-bottom: 20px !important;
+    padding: 0 10px;
+}
 
 /* SERVICES */
 .farmServices {
@@ -408,6 +476,68 @@ header .dropdown-menu {
 
 /* BACK TO TOP */
 
+/* LIGHT THEME */
+
+#switchButton .bi-brightness-high {
+    display: none;
+}
+
+#switchButton .bi-moon {
+    display: block;
+}
+
+/* DARK THEM */
+
+.dark#myBody {
+    background-color: #222222;
+}
+
+/* header */
+
+.dark #switchButton .bi-brightness-high {
+    display: block;
+    color: white;
+}
+
+.dark #switchButton .bi-moon {
+    display: none;
+}
+
+.dark #switchButton i:hover {
+    color: #fb811e;
+}
+
+/* carousel */
+
+.dark .carouselLeft__content>h2 {
+    color: black;
+}
+
+.dark .title h2 {
+    color: #fdfffc;
+}
+
+.dark .title p:last-of-type {
+    color: #b7b7b7;
+}
+
+/* grow */
+
+.dark .card {
+    background-color: #222222;
+    box-shadow: 0 1rem 3rem #171313;
+}
+
+.dark .card a {
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.dark .card a:hover {
+    color: #009f4d;
+}
+
+/* BACK TO TOP */
 .backToTop {
     position: fixed;
     bottom: 90px;
@@ -421,8 +551,8 @@ header .dropdown-menu {
     font-size: 16px;
     text-align: center;
     line-height: 40px;
-    /* visibility: hidden;
-    opacity: 0;    */
+    /* visibility: hidden; */
+    /* opacity: 0; */
     transition: all 0.2;
 }
 
@@ -431,7 +561,7 @@ header .dropdown-menu {
     color: #fff;
 }
 
-/* .cd-top--is-visible {
+.cd-top--is-visible {
     visibility: visible;
     opacity: 1;
-  } */
+}
