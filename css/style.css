@@ -169,6 +169,10 @@ header.sticky .dropdown .text-white {
     z-index: 100;
 }
 
+.farmCarousel .carousel {
+    padding: 0;
+}
+
 .farmCarousel .title p {
     font-size: 20px;
 }
