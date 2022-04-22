@@ -311,8 +311,16 @@ header.sticky .dropdown .text-white {
         border-radius: 10px;
     }
 
+    .dark .carousel__left {
+        background-color: #222222;
+    }
+
     .carouselLeft__content>h2 {
         font-size: 70px;
+    }
+
+    .dark .carouselLeft__content>h2 {
+        color: #000;
     }
 
     .carouselLeft__content .title h2 {
@@ -320,13 +328,22 @@ header.sticky .dropdown .text-white {
         line-height: 38px;
     }
 
+    .dark .carouselLeft__content .title h2{
+        color: #fff;
+    }
+
     .carouselLeft__content .title p {
         font-size: 16px;
+    }
+
+    .dark .carouselLeft__content .title p{
+        color: #b7b7b7;
     }
 
     .carouselLeft__content .title button {
         margin-top: 20px;
     }
+
 }
 
 @media screen and (max-width: 568px) {
