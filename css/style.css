@@ -416,6 +416,7 @@ header.sticky .dropdown .text-white {
 
 .grow .title p:first-of-type {
     margin: 0;
+    color: #fb811e;
 }
 
 .grow__items {
