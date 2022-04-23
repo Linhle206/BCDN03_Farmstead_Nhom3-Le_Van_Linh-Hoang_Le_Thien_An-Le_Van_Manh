@@ -615,16 +615,12 @@ header.sticky .dropdown .text-white {
 }
 
 /* WHYUS */
+/* .whyUs__content {
+    flex-wrap: nowrap;
+} */
+
 .whyUs {
     padding-top: 100px;
-}
-
-.whyUs__content {
-    flex-wrap: nowrap;
-}
-
-.whyUs__content {
-    display: flex;
 }
 
 .whyUs__left {
@@ -647,17 +643,6 @@ header.sticky .dropdown .text-white {
     color: #707070;
     font-size: 17px;
     margin: 16px 0;
-}
-
-.whyUs__bottom {
-    display: flex;
-    margin-top: 50px;
-}
-
-.bottom__left,
-.bottom__right {
-    display: flex;
-    padding: 0 10px;
 }
 
 .whyUs__left span {
@@ -711,6 +696,52 @@ header.sticky .dropdown .text-white {
 
 }
 
+@media screen and (max-width: 1200px){
+    .whyUs h4 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .whyUs h5 {
+        font-size: 20px;
+    }
+
+    .whyUs h3 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .whyUs h5 {
+        font-size: 18px;
+    }
+
+    .whyUs h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width: 738px) {
+   .whyUs__year {
+       left: -50px;
+   } 
+}
+
+@media screen and (max-width: 568px) {
+    .whyUs h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 576px) {
+    .whyUs__right {
+        margin-top: 3rem;
+    }
+}
 
 /* FEATURES */
 .features {
@@ -730,7 +761,7 @@ header.sticky .dropdown .text-white {
     font-size: 24px;
     color: #060606;
     font-weight: 600;
-    transition: 0.3s ease-in;
+    /* transition: 0.3s ease-in; */
 }
 
 .features p {
@@ -743,7 +774,7 @@ header.sticky .dropdown .text-white {
 }
 
 .fea__card {
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
     padding: 32px 1px;
     border-radius: 10px;
     border: 1px solid transparent;
@@ -761,6 +792,28 @@ header.sticky .dropdown .text-white {
     transition: 0.3s ease-in;
 }
 
+.features img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .features h4 {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .features h4 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: ) {
+    
+}
 
 
 
@@ -848,6 +901,71 @@ header.sticky .dropdown .text-white {
 .dark .card a:hover {
     color: #009f4d;
 }
+
+/* farmServices */
+
+.dark .card__body {
+    background-color: #222222;
+}
+
+.dark .card__body a {
+    color: #fdfffc;
+    transition: all 0.5s;
+}
+
+.dark .card__body p {
+    color: #b7b7b7;
+}
+
+.dark .card__body a:hover {
+    color: #009f4d;
+}
+
+/* whyUs */
+.dark .whyUs h5 {
+    color: #fb811e;
+}
+
+.dark .whyUs h3 {
+    color: #fdfffc;
+}
+
+.dark .whyUs p {
+    color: #b7b7b7;
+}
+
+.dark .whyUs h4 {
+    color: #fdfffc;
+}
+
+.dark .whyUs__right p {
+    color: #fdfffc;
+}
+
+/* features */
+
+.dark .features h4 {
+    color: #fdfffc;
+
+}
+
+.dark .features p {
+    color: #b7b7b7;
+}
+
+.dark .fea__card:hover {
+    border: 1px solid #ffffff33;
+    transition: 0.3s ease-in;
+    background-color: #222222;
+}
+
+.dark .fea__card:hover h4 {
+    color: #009f4d;
+    transition: 0.3s ease-in;
+}
+
+
+
 
 /* BACK TO TOP */
 
