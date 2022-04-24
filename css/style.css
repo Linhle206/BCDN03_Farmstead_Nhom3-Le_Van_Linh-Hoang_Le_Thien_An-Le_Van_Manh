@@ -545,8 +545,9 @@ header.sticky .dropdown .text-white {
     font-weight: bold;
     opacity: 0.15;
     font-size: 12vw;
-    bottom: 1%;
-    right: 20%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .row h5 {
@@ -611,8 +612,24 @@ header.sticky .dropdown .text-white {
     color: #707070;
     font-size: 17px;
     line-height: 27px;
-
 }
+
+
+@media screen and (max-width: 991px) {
+    .farmServices h5 {
+        font-size: 20px;
+    }
+
+    .farmServices h3 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+
+
+
+
 
 /* WHYUS */
 /* .whyUs__content {
@@ -722,6 +739,10 @@ header.sticky .dropdown .text-white {
         font-size: 32px;
         line-height: 42px;
     }
+
+    .whyUs__right {
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width: 738px) {
@@ -737,15 +758,23 @@ header.sticky .dropdown .text-white {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .whyUs__right {
+        margin-left: 8.33333%;;
+    }
+}
+
 @media (min-width: 576px) {
     .whyUs__right {
         margin-top: 3rem;
     }
 }
 
+
+
 /* FEATURES */
 .features {
-    padding: 100px;
+    padding: 100px 0px;  
 }
 
 .features__content {
@@ -769,13 +798,9 @@ header.sticky .dropdown .text-white {
     font-size: 17px;
 }
 
-.fea__item {
-    margin-top: 30px;
-}
-
 .fea__card {
     /* background-color: #fafafa; */
-    padding: 32px 1px;
+    padding: 32px 16px;
     border-radius: 10px;
     border: 1px solid transparent;
     transition: 0.3s ease-in;
@@ -794,6 +819,10 @@ header.sticky .dropdown .text-white {
 
 .features img {
     height: auto;
+    max-width: 100%;
+}
+
+.features .col-9 {
     max-width: 100%;
 }
 
