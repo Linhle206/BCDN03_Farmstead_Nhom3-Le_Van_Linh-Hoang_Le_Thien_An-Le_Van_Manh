@@ -52,7 +52,13 @@ header {
     padding: 8px 16px;
     transition: all 0.5s;
 }
-
+#myBody .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
 .navbar-brand {
     position: relative;
 }
@@ -968,6 +974,7 @@ header.sticky .dropdown .text-white {
 /* BACK TO TOP */
 
 .backToTop {
+    z-index: 9999;
     position: fixed;
     bottom: 90px;
     right: 15px;
@@ -1133,6 +1140,13 @@ body a, button, .btn {
     right: 0;
     margin: 20px;
     
+}
+
+.dark .gallery h3 {
+    color:#fff;
+}
+.dark .gallery p{
+    color:#fff;
 }
 /*
 FEEDBack
